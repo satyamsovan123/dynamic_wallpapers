@@ -1,13 +1,8 @@
 # dynamic_wallpapers
-A bash script for using dynamic wallpaper (like the one in macOS Mojave)
+This is a bash script for using dynamic wallpaper (like the one in macOS Mojave). These wallpapers are from macOS Mojave's dynamic wallpaper.
+The wallpapers folder contains the some of the selected wallpapers, which were extracted from the .HEIC file. The script named wallpaper.sh switches the wallpaper from wallpapers folder in the interval of 2 hours. The main.sh makes "wallpaper.sh" as executable file and calls the wallpaper.sh routine. The entire program contains absolute paths (keeping it in Downloads folder), so it's ready to rock!
 
-wallpapers folder contains the some of the selected wallpapers, which were extracted from the .HEIC file
-wallpaper.sh switches the wallpaper from wallpapers folder after 2 hours
-main.sh makes "wallpaper.sh" as executable file and calls the wallpaper.sh routine
-The entire program contains absolute paths, so it's ready to rock!
-These wallpapers are from macOS Mojave's dynamic wallpaper.
-
-This script runs like a daemon process,so even if you close terminal(and not shutdown) it would run in background 
+This script runs like a daemon process, so even if you close terminal(and not shutdown)it would run in background 
 to stop this, you might want to shut down the console/terminal to stop the process.
 To make this script work download this repo to your Downloads folder (don't move it anywhere, else it won't work).
 Then run main.sh script by typing sh main.sh command in console/terminal.
